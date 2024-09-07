@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://tuwaiq.edu.sa/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/3b390d3097.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <title>حول الأكاديمية</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+    body{
+      font-family: IBM Plex Sans Arabic !important;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .navbar-nav .nav-link {
+      margin: 0 15px;
+    }
+    .btn-purple {
+      background-color: #4f29b7;
+      color: #57e3d7;
+    }
+    .btn-purple:hover {
+      background-color: #4f29b7;
+      color: white;
+    }
+    .navbar-brand img {
+      width: 200px !important; 
+      height: auto; 
+    }
+    .container-map{
+      display: flex;
+   }
+    .map-up iframe{
+      margin: 10px; 
+      width:100%;
+      height:400px;
+       }
+    @media (max-width: 768px) {
+      .navbar-brand img {
+        width: 150px; 
+      }
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-left: 20px; 
+      border-radius: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover; 
+    }
+
+    .card-custom {
+      margin-bottom: 15px; 
+    }
+
+    .card-header {
+      font-weight: bold;
+      font-size: 1.25rem; 
+    }
+    .card-body {
+      font-size: 1rem;
+    }
+    .card-footer {
+      font-size: 1.5rem; 
+    }
+    .card-icon {
+      font-size: 2rem; 
+      margin-right: 10px;
+      }
+      .full-width-bg {
+            background-color: #f5f5f7;
+            width: 100%;
+            position: relative;
+            left: 0;
+            right: 0;
+        }
+        .service-item {
+            display: inline-block;
+            border: 2px solid #ddd;
+            background-color: #f9fafb;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            text-align: right;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .list-unstyled{
+          display: flex;
+          justify-content: start;
+          direction: rtl;
+        }
+        .list-unstyled div{
+          display: flex;
+          flex-direction: column;
+          place-items: end;
+          font-weight: 900;
+          gap:15px;
+          width: 100% !important;
+          direction: rtl;
+        } 
+        .list-unstyled  li a{
+          color: #4831ae !important ;
+          font-weight: 500;
+        }
+        .list-unstyled  li a:hover{
+         text-decoration: underline !important;
+        }
+         .btn-link img{
+          background-color: rgb(60, 14, 145);
+          border-radius: 90%;
+         }
+    
+        footer {
+          background-color: #E3D8FF;
+        }
+        @media (max-width: 768px) {
+            .service-item {
+                width: calc(50% - 20px);
+            }
+        }
+        .offers{
+              display: flex;
+              flex-wrap: wrap;
+              text-align: center;
+              justify-content:space-between;
+            }
+               
+            .offers-son{
+              width:32% !important;
+              
+            }
+
+        @media (max-width: 576px) {
+          footer{
+            border-top-right-radius:60px;
+            border-top-left-radius:60px;
+          }
+            .service-item {
+                width: 100%;
+            }
+
+            .container-main{
+      display: flex;
+
+    }
+    .map-up iframe{
+      margin: 10px; 
+      width:100%;
+      height:150px;
+       }
+       .location-details h2{
+        font-size: 17px !important;
+       }
+            
+            .offers-son{
+              width:48% !important;
+              margin: 2px;
+            
+            }
+            .offers-son h3{
+              width: 100%;
+              text-align: center;
+            }
+            .fa-solid{
+             
+              display: block;
+              text-align: center;
+            }
+            .footer-list{
+              display: flex !important;
+              text-align: center;
+              justify-content: center !important;
+              place-items: center !important;
+            }
+             .text-md-end {
+             display: block;
+             margin: auto;
+            padding-right:100px ;
+            }
+            hr{
+              display: none;
+            }
+            .list-unstyled {
+              width: 100%;
+              color:#4831ae;
+              font-weight: 500;
+            }
+            .list-unstyled div{
+          display: flex;
+  
+          flex-direction: column;
+          place-items: center;
+        } 
+        .list-unstyled img{
+          display: block;
+          width: 100% !important;
+          margin:  0 auto;
+        }
+        .footer-link{
+         
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+        }
+        }
+        .video-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .card {
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        .card-section {
+            border: 2px solid #f8f7f7;
+            padding: 20px;
+            text-align: right;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 300px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+        }
+        .card-section i {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            font-size: 50px;
+            color: #f4e597;
+        }
+        .section-title {
+            padding-bottom: 50px;
+            font-size: 50px;
+            font-weight: 600;
+            text-align: right;
+        }
+        .container-main {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #f3f8fe;
+        }
+        .location-details {
+            margin-bottom: 30px;
+        }
+        .map {
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden; 
+        }
+        iframe {
+            width: 95%;
+            height: 100%;
+            border: 0;
+        }
+        h2 {
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        p {
+            line-height: 1.8;
+            color: #a2a3a4;
+        }
+        
+      
+  </style>
+</head>
+<body dir="rtl">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid d-flex justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h.png" alt="شعار الأكاديمية">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link fw-medium" aria-current="page" href="index.html" style="font-size: 16px;">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-medium" style="font-size: 16px;" href="#">حول الأكاديمية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" style="font-size: 16px;" href="#">الأكاديميات التابعة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium" style="font-size: 16px;" href="#">مركز الاختبارات</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <button style="font-size: 16px;" class="btn btn-purple">تسجيل الدخول <i class="bi bi-arrow-left"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container-xxl ">
+  <div class="row">
+      <div class="col-lg-7 mb-2">
+          <div class="video-container">
+              <video src="https://cdn.tuwaiq.edu.sa/landing/introS2.mp4" controls autoplay muted loop style="width: 100%; height: auto;">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+      <div class="col-lg-5">
+          <div class="row">
+              <div class="col-6 mb-2">
+                  <div class="card" style="background-color: #d3f5d4;">
+                      <div style="font-weight: 500; font-size: 25px;">هيئة التدريس</div>
+                      <div style="color: #abb4ab;">عدد الأعضاء</div>
+                      <div style="font-weight: bolder; font-size:30px; color: #8fd393;">+50</div>
+                      <div class="d-flex align-items-end " style="width: 100%;">
+                        <i class="fa-solid fa-chart-simple"style="color: #6432d3;font-size:80px; text-align: end;  width: 100%;"></i>
+          
+                      </div> 
+                  </div>
+              </div>
+              <div class="col-6 mb-2">
+                  <div class="card" style="background-color: #bed9ff;">
+                      <div style="font-weight: 500; font-size: 25px;">عدد الطلاب يومياً</div>
+                      <div style="color: #abb4ab;">طالب وطالبة</div>
+                      <div style="font-weight: bolder; font-size:30px; color: #5c90d7;">+1200</div>
+                      <div class="d-flex align-items-end " style="width: 100%;">
+                        <i class="fa-solid fa-users"style="color: #6432d3;font-size:80px; text-align: end;  width: 100%;"></i>
+                      </div> 
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="card" style="background-color: #e6dcfe;">
+                      <div style="font-weight: 500; font-size: 25px;">تسجيل في البرنامج الواحد</div>
+                      <div style="color: #abb4ab;">طالب وطالبة</div>
+                      <div style="font-weight: bolder; font-size:30px; color: #6432d3;">+5000</div>
+             <div class="d-flex align-items-end " style="width: 100%;">
+              <i class="fa-solid fa-briefcase"style="color: #6432d3;font-size:80px; text-align: end;  width: 100%;"></i>
+            </div>   
+            </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="full-width-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+        <div style="font-weight: 600; font-size: 50px; padding-top: 40px; padding-bottom: 30px;">من نحن؟</div>
+        <p style="font-size: 1.25rem; color: black; padding-bottom: 70px;">
+          تعد أكاديمية طويق الأولى في البرامج التعليمية لمجالات التقنيات المتقدمة بالمملكة العربية السعودية، حيث تقدم عدد من البرامج المتنوعة في مختلف المسارات التقنية ولمختلف الفئات العمرية؛ وتم الإعلان عن تأسيس الأكاديمية في أغسطس من عام 2019م.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" style="margin-top: 70px; text-align: right;">
+  <h2 style="padding-bottom: 50px; font-size: 50px; font-weight: 600;" >ماذا نقدم؟</h2>
+  <div class="offers" >
+      <div class="offers-son" style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb; padding: 10px; padding: 25px;  text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px;  margin-bottom: 20px; color:#ff8181">
+        <i class="fa-solid fa-graduation-cap"style=" margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">المعسكرات</h3>
+      </div>
+      <div class="offers-son" style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb; padding: 10px;padding: 25px;   text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px; margin-bottom: 20px; color:#ffda5e">
+        <i class="fa-solid fa-book-open" style=" margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">البرامج التدريبية</h3>
+      </div>
+      <div class="offers-son" style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb; padding: 10px; padding: 25px;  text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px; margin-bottom: 20px;color:#a5c8fd">
+        <i class="fa-solid fa-tv" style=" margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">التعليم الإلكتروني</h3>
+      </div>
+      <div  class="offers-son" style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb;padding: 10px;padding: 25px;   text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px; margin-bottom: 20px;color:#f4a564">
+        <i class="fa-solid fa-earth-americas"style=" margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">المنافسات العالمية</h3>
+      </div>
+      <div  class="offers-son"  style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb; padding: 10px;padding: 25px;   text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px; margin-bottom: 20px;color:#a37fff">
+        <i class="fa-solid fa-computer" style=" margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">المجتمعات الرقمية</h3>
+      </div>
+      <h1></h1>
+      <div  class="offers-son" style="display: inline-block; border: 2px solid #ddd; background-color: #f9fafb; padding: 10px; padding: 25px;  text-align: right; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);font-size: 60px; margin-bottom: 20px;color:#80d882">
+        <i class="fa-solid fa-user-check" style="margin-bottom: 10px;"><br><br></i>
+          <h3 style="font-size: 30px;">اللقاءات المعرفية</h3>
+      </div>
+  </div>
+</div>
+
+<section style="background-color: #f5f5f7; padding:30px 0; ">
+  <div class="container text-center">
+      <h2 class="section-title">المنافسات العالمية</h2>
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 15px;">
+              <div class="card-section">
+                  <i class="fa-solid fa-trophy"></i>
+                  <h3 style="font-size: 1.25rem;">المعرض الدولي للاختراع والابتكار والتكنولوجيا "ITEX"</h3>
+                  <p style="color: #000000; font-weight: 200;">9 ميداليات ذهبية</p>
+              </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 15px;">
+              <div class="card-section">
+                  <i class="fa-solid fa-ranking-star"></i>
+                  <h3 style="font-size: 1.25rem;">تحطيم رقم قياسي عالمي في موسوعة غينيس</h3>
+                  <p style="color: #000000; font-weight: 200;">أكثر من 750 مستفيد</p>
+              </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4" style="margin-bottom:15px;">
+              <div class="card-section">
+                  <i class="fa-solid fa-ranking-star"></i>
+                  <h3 style="font-size: 1.25rem;">الفوز بجوائز تحدي علوم المستقبل</h3>
+                  <p style="color: #000000; font-weight: 200;">المركز الأول لفئة الناشئين بطل تحدي علوم المستقبل</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="container-xxl container-main" style="border-radius: 30px;">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="location-details">
+              <h2>
+                  <i class="fa-solid fa-map-location-dot" style="margin-right: 20px; color: #5783bf; padding-left: 10px; "></i>
+                  موقع أكاديمية طويق 
+              </h2>
+              <p>
+                  المملكة العربية السعودية الرياض - حي مطار الملك خالد <br />
+                  جامعة الأميرة نورة بنت عبدالرحمن<br />
+                  المبنى: 3446 <br />
+                  الرمز البريدي: 13415 <br />
+              </p>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14481.147776054995!2d46.7129177!3d24.8540475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efbd2d9c324c7%3A0x9124f530f1b56443!2sTuwaiq%20Academy!5e0!3m2!1sen!2ssa!4v1714824094436!5m2!1sen!2ssa"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer class=" pt-4" dir="ltr">
+  <div class="container">
+      <div class="row footer-list">
+     
+          <div class="col-md-6">
+              <ul class="list-unstyled">
+                <div>
+                  <li><a href="#" class="text-dark text-decoration-none ">شارك كمدرب</a></li>
+                  <li><a href="#" class="text-dark text-decoration-none">حول الاكاديمية</a></li>
+  
+                </div>
+                <div>
+                  <li><a href="#" class="text-dark text-decoration-none">سياسة الخصوصية</a></li>
+
+                  <li><a href="#" class="text-dark text-decoration-none">الشروط والأحكام</a></li>
+
+                </div>
+               
+                
+                  
+              </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-unstyled">
+                <li>
+                    <img src="https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h.png" alt="Logo" class="img-fluid" style=" max-width: 150px; height: auto;">
+                </li>
+            </ul>
+        </div>
+      
+        
+      </div>
+      <hr>
+      <div class=" footer-link d-flex justify-content-between  text-center">
+              <div class="d-flex p-lg-5  justify-content-center">
+          <a href="#" class="btn btn-link "><img  class="bgg" src="discord-icon.svg" alt="Discord" width="60"></a>
+          <a href="#" class="btn btn-link"><img src="twitter-icon.svg" alt="TikTok" width="50"></a>
+          <a href="#" class="btn btn-link"><img src="youtube-icon.svg" alt="YouTube" width="50"></a>
+          <a href="#" class="btn btn-link"><img src="snapchat-icon.svg" alt="Snapchat" width="50"></a>
+          <a href="#" class="btn btn-link"><img src="linkedin-icon.svg" alt="LinkedIn" width="50"></a>
+      </div>
+      <div class="text-center p-lg-5  mt-lg-3" >
+          <p style="font-weight: 500; font-size: medium; color:#3c0c94">.© 2024 أكاديمية طويق. جميع الحقوق محفوظة</p>
+      </div>
+      </div>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
